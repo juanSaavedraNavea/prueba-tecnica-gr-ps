@@ -1,0 +1,19 @@
+const express = require("express");
+const { salesRouter } = require("./modules/sales/infrastructure/http/sales.routes");
+const { errorMiddleware } = require("./shared/errors/errorMiddleware");
+
+function createServer() {
+  const app = express();
+
+  app.use(express.json());
+
+  app.get("/health", (_req, res) => res.json({ ok: true }));
+
+  app.use("/sales", salesRouter);
+
+  app.use(errorMiddleware);
+
+  return app;
+}
+
+module.exports = { createServer };

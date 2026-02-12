@@ -1,0 +1,25 @@
+{
+  "name": "prueba-tecnica-gr-ps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanSaavedraNavea/prueba-tecnica-gr-ps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/juanSaavedraNavea/prueba-tecnica-gr-ps/issues"
+  },
+  "homepage": "https://github.com/juanSaavedraNavea/prueba-tecnica-gr-ps#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
